@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+        .nav-bar{
+    overflow: hidden;
+    background-color: bisque;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    }
+        .nav-bar ul a{
+    display: inline-block;
+    color: black;
+    padding: 12px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    }
+
+        #Home{
+            background-color: blueviolet;
+            box-sizing: border-box;
+            width: auto;
+            background-image: url(images/circle.png );
+            height: 500px;
+        }
+                
+                .Text {
+                width: 450px;
+                height: 220px; 
+                float: right;
+                padding-top: 40px;
+                color: white;
+                font-size: 30px;
+                margin-top: 120px;
+                padding-right: 90px;
+                /*background-color: aqua; */
+
+                }
+
+        #gallery{
+            height: 400px;
+            box-sizing: border-box;
+        }
+
+                div.gallery {
+                border: 1px solid #ccc;
+                }
+
+                div.gallery:hover {
+                border: 1px solid #777;
+                }
+
+                div.gallery img {
+                width: 100%;
+                height: auto;
+                }
+
+                .responsive {
+                padding: 0 6px;
+                float: left;
+                width: 24.99999%;
+                margin-top: 60px;
+                margin-bottom: 60px;
+                }
+
+        .list{
+            width: 200px;
+            height: 300px;
+           display: inline;
+        }
+        .list ul{
+            display: inline-flex;
+        }
+        image{
+            width: 60%;
+                height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <a href="#Home">Home</a>
+            <a href="#Gallery">Gallery</a>
+            <a href="#Menu">Menu</a>
+        </ul>
+</div>
+
+<section id="Home">
+   <div class="Text">
+    <h1>WELCOME</h1>
+    <p> To the best technology space there is. </p>
+    </div>
+   </div>
+     <br>
+    
+</section>
+<br>
+
+<section id="Gallery">
+
+
+  <!--  <h1 style="color: black; margin-left: 23em;"> NATURE GALLERY </h1>
+<div class="container">
+    <div class="column">1
+
+    </div>
+    <div class="column">1</div>
+    <div class="column">1</div>
+</div> -->
+
+<h1 style="text-align: center;"> NATURE PICTURES</h1>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.nature.com/">
+      <img src="images/985.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+   
+  </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://naturekenya.org/">
+        <img src="images/1462.jpg" alt="Forest" width="600" height="400">
+      </a>
+     
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://asknature.org/">
+        <img src="images/pexels-kelly-2918152.jpg" alt="Northern Lights" width="600" height="400">
+      </a>
+     
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_mountains.jpg">
+        <img src="images/pexels-kelly-2918152.jpg" alt="Mountains" width="600" height="400">
+      </a>
+    </div>
+  </div>
+  
+</section>
+
+<br>
+
+<section id="Menu" style="margin-top: 20px;">
+    <h2 style="text-align: center;"> Menu</h2>
+
+    <div class="list">
+        <ul>
+            <li class="images">
+                <a target="_blank" href="https://judywanderi.net/chapati-soft-and-delicious-kenyan-delicacy/"> 
+                    <img src="images/pexels-towfiqu-barbhuiya-9797029 (1).jpg" alt="Northern Lights" width="400" height="300">
+                </a>
+                    Chapati
+            </li>
+            <li class="images">
+                <a target="_blank" href="https://afrifoodnetwork.com/recipes/ugali/">
+                    <img src="images/download (1).jpg" alt="Northern Lights" width="400" height="300"> </a>
+                    
+                    Ugali
+            </li>
+            <li class="images">
+                <a target="_blank" href="https://www.allrecipes.com/recipe/79543/fried-rice-restaurant-style/">
+                    <img src="images/download (2).jpg" alt="Northern Lights" width="400" height="300"> </a>
+                     Rice 
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+    
+
+
+
+</body>
+</html>
