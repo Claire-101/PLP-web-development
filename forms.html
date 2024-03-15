@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+         crossorigin="anonymous"</script>
+    </script>
+
+    <script>
+        function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/f5uknsIRkRCIoXoL/',
+        type:'post',
+        data:$("#myform").serializeArray(),
+        success: function(){
+          alert("Registration Succesful:)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+    </script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        #myform{
+            display: flex;
+            padding-left: 45px;
+            width: 390px;
+            height: 550px;
+            background-color:#32425b ;
+            flex-direction: column;
+        }
+        
+        input[type=text], input[type=tel] ,input[type=email] , input[type=date] {
+            width: 80%;
+            padding: 7px;
+            background: none;
+            border: 2px #42526a solid;
+            display: inline-flex;
+            margin-left: 3px;
+            margin-top: 5px;
+            color: white;
+        }
+        input[type="radio"] + label{
+            color: white;
+        
+            
+        }
+        ::placeholder{
+            color: rgb(164, 159, 159);
+        }
+        label{
+            margin-top: 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 14px;
+            color: #9bacbf;
+        }
+        h3{
+            text-align: center;
+            margin-right: 20px;
+            color: aliceblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: 3px;
+            margin-top: 10px;
+        }
+        .gender{ 
+            margin-top: 20px;
+        }
+
+        .button{
+            margin-top: 10px;
+        }
+        button{
+            padding: 9px 30px 8px 15px;
+            display: inline-block;
+            background-color: #0eeac9;
+            border: none;
+            margin: 5px 2px;
+            font-size: 15px;
+            border-radius: 5px;
+          
+        }
+    
+    </style>
+</head>
+<body>
+    <form id="myform">
+       
+        <h3>
+            REGISTER
+        </h3>
+
+        <label for="name"><b>NAME</b></label>
+        <input type="text" placeholder="Name" name="name" required>
+            
+            
+                <label for="date Of Birth"><b>Date of Birth</b></label>
+                <input type="date" placeholder="date of Birth" name="dOB" required>
+               
+
+            <label for="Address"><b>ADDRESS</b></label>
+             <input type="text" placeholder="Address" required>
+       
+            <label for="Telephone"><b>TELEPHONE</b></label>
+             <input type="tel" placeholder="Telephone" required>
+        
+        
+        
+            <label for="Email "><b>Email</b></label>
+             <input type="email" placeholder="Email" required>
+       
+        
+        
+            <label for="Course "><b>COURSE</b></label>
+            <input type="text" placeholder="Course" required>
+       
+        <span class="gender">
+            <label for="gender"><b>GENDER</b></label> &nbsp; &nbsp;
+            <input type="radio" name="gender" value="Female" > <label >Female</label> 
+            <input type="radio" name="gender" value="Male"> <label >Male</label>
+            <input type="radio" name="gender" value="Other"> <label>Other</label>
+        </span>
+        
+        <div class="button">
+            <button onclick="Subform()">REGISTER </button>
+            <button style="margin-left: 40px;"> CANCEL</button>
+        </div>
+       
+        <div class="button1">
+            
+        </div>
+
+    </form>
+    
+</body>
+</html>
