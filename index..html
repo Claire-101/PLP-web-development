@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*Header*/
+        header{
+            width: 78.95em;
+            height: 40px;
+            background-color: #131f22;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+
+        /* Content + Image*/
+        .container{
+            display: flex;
+            height: 430px;
+           padding-top: -30px;
+
+        
+        }
+        .column{
+            width: 50%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 120px;
+        }
+
+        .column1{
+            width: 50%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-left: -100px;
+            ;
+        }
+        img{
+            height: 25em;
+            margin-top: 2em;
+            margin-left: -90px;
+        }
+        h1,h2{
+            font-family: "Hanken Grotesk", sans-serif;
+            font-weight: 700;
+            font-size: 45px;
+        }
+        ol{
+            margin-left: 35px;
+            margin-top: 10px;
+            font-family: "Hanken Grotesk", sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        /* Text for skills*/
+        #skills{
+            font-family: "Hanken Grotesk", sans-serif;
+            font-size: 60px;
+            margin-left: 100px; 
+        } 
+
+        /*Skills Information - first column*/
+        .skills{
+            display: flex;
+            height: 250px;
+        }
+        .Text{
+            width: 50%;
+            height: auto;
+            display: inline;
+            justify-content: space-between;
+            padding: 40px;
+            padding-top: 16px;
+            }
+        .webskill{
+            width: 500px;
+            height: 40px; 
+            margin-left: 20px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            font-family: "Hanken Grotesk", sans-serif;
+            font-size: 20px;
+            padding-left: 20px;
+        }
+        span{
+            margin-top: 10px;
+           
+        }
+        .container1 { 
+            background-color: rgb(192, 192, 192); 
+            width: 50%; 
+            height: 8px;
+            border-radius: 15px; 
+            margin-top: 20px;
+        } 
+        .skill { 
+            background-color: #ffce02; 
+            color: white; 
+            padding: 1.5%; 
+            text-align: right; 
+            /* font-size: 12px; */
+            border-radius: 15px; 
+        } 
+  
+        .html { 
+            width: 90%; 
+        } 
+
+
+        /*2nd Column*/
+        .details{
+            width: 50%;
+            height: auto;
+            display: inline;
+            justify-content: space-between;
+            padding-top: 16px;
+            display: grid;
+        }
+ 
+        /*Footer*/
+        .footer {
+            width: 100%;
+            background-color: #131f22;
+            display:flex;
+            flex-direction: column;
+          align-items: center;
+            margin-top: 35px;
+            padding-left: 50px;
+            padding: 20px;
+            color: aliceblue; 
+            font-family: "Hanken Grotesk", sans-serif;
+        }
+        span{
+            display: inline;
+        }
+        i{
+            margin: 10px;
+        }
+ 
+        /* RESPONSIVENESS*/
+        @media screen and (min-width:320px) and (max-width:480px) {
+            body{
+                width: auto;
+            }
+            header{
+                width: auto;
+            }
+
+            .column1{
+                display: none;
+            }
+            .column{
+            width: 100%;
+            padding-left: 0px;
+            margin-top: -40px;
+            height: 450px;
+            }
+
+            ol{
+            margin-top: 26px;
+            }
+
+            #skills{
+            font-size: 50px;
+            margin-left: 0px; 
+            margin-top: -50px;
+            } 
+            .skills{
+             height: 480px;
+            flex-direction: column;
+            width: auto;
+            }
+            .Text{
+            width: auto;
+            padding: 0px;
+            }
+            .details{
+            width: auto;
+            display: inline;
+            padding-top: 0px;
+            
+        }
+            .webskill{
+            width: auto; 
+            margin-left: 00px;
+            padding-left: 00px;
+        }
+        .container1 { 
+            height: 5px;
+            margin-right: 10px;
+        } 
+        h4{
+            font-size: 17px; 
+        }
+        .footer{
+            margin-top: 0px;
+        }
+        
+
+        }
+        @media screen  and  (max-width:768px) and (min-width:481px){
+            body{
+                width: auto;
+            }
+            header{
+            width: auto;
+            }
+            .container{
+            height: 240px;
+            }
+            .column{
+            width: 55%;
+            padding-left: 20px;
+            padding-top: 20px;
+            }
+            h1,h2{
+                font-size: 17px;
+                padding-left: 20px;
+            }
+            ol{
+                font-size: 0.9em;
+                margin-left: -0.5px;
+            }
+            .column1{
+            width: 50%;
+            height: auto;
+            }
+            img{
+            height: 10em;
+            margin-left: 0px;
+            }
+            #skills{
+            margin-left: 0px; 
+            } 
+            .skills{
+            height: 480px;
+            flex-direction: column;
+            }
+            .Text{
+            width: auto;
+           
+            padding: 0px;
+            padding-top: 0px;
+            }
+            .webskill{
+            width: 390px;
+            padding-left: 0px;
+            }
+            .container1 { 
+            width: 40%; 
+            height: 5px;
+            } 
+            .details{
+            width: auto;
+            padding-top: 0px;
+            }
+            .footer {
+            width: 100%;
+            margin-top: 10px;
+            
+        }
+            
+    }
+
+      
+
+	
+
+        
+    </style>
+</head>
+<body>
+    <header>
+       <h3> Hello , I am Claire a Student at PLP.</h3> 
+    </header>
+    <div class="container">
+        <div class="column">
+            <h1>Introduction</h1>
+            <h2>Hi, there I am <span style="color:#ffce02;"> Claire</span></h2>
+                <ol>
+                    <li>I am passionate about reading</li>
+                    <li>I am passionate about reading</li>
+                    <li>I am passionate about reading</li>
+                    <li>I am passionate about reading</li>
+                </ol>
+        </div>
+        <div class="column1">
+            <img src="illustartion.png" alt="">
+        </div>
+    </div>
+
+    <h1 id="skills">Skills</h1>
+    
+    <div class="skills">
+         <div class="Text">
+            
+            <div class="webskill">
+              <span> <h4>Web Design</h4></span>  
+                <div class="container1">
+                    <div class="skill html"></div>
+                </div>
+
+            </div>
+
+            <div class="webskill">
+                <span> <h4>Graphic Design</h4></span>  
+                  <div class="container1">
+                      <div class="skill html" style="width:80%"></div>
+                  </div>
+  
+              </div>
+
+              <div class="webskill">
+                <span> <h4>UI/UX</h4></span>  
+                  <div class="container1">
+                      <div class="skill html"></div>
+                  </div>
+  
+              </div>
+
+              <div class="webskill">
+                <span> <h4>Product Design</h4></span>  
+                  <div class="container1">
+                      <div class="skill html"></div>
+                  </div>
+              </div>
+
+        </div>
+
+        <div class="details"> 
+          <div class="webskill">
+                <span> <h4>HTML/CSS</h4></span>  
+                  <div class="container1">
+                      <div class="skill html"></div>
+                  </div>
+            </div>
+
+            <div class="webskill">
+                <span> <h4>Javascript</h4></span>  
+                  <div class="container1">
+                      <div class="skill html" style="width:70%"></div>
+                  </div>
+            </div>
+
+            <div class="webskill">
+                <span> <h4>JS Frameworks</h4></span>  
+                  <div class="container1">
+                      <div class="skill html"></div>
+                  </div>
+            </div>
+
+            <div class="webskill">
+                <span> <h4>Python</h3></span>  
+                  <div class="container1">
+                      <div class="skill html" style="width:70%"></div>
+                  </div>
+            </div>
+
+      
+                  
+        </div>
+    </div>
+
+    <div class="footer">
+        
+            <h2 style="font-size: 30px;">Get in Touch </h2>
+                <p style="margin-top: 10px;">You can follow me on</p>
+                <span style="margin-left: -40px;">
+                    <i style="font-size:24px; color: #fee5b5;" class="fa">&#xf16d;</i>
+                    <i style="font-size:24px; color: #fee5b5;" class="fa fa-linkedin-square"></i>
+                    <i style="font-size:24px; color:#fee5b5 ;" class="fa fa-pinterest-square"></i><br>
+                 </span>
+
+                <span style="display: inline-flex;"><i class="fa fa-envelope" style="font-size:30px;color: #fee5b5;"></i>
+                    <p style="margin-top: 20px;">infoclaire@gmail.com</p> 
+   </span>
+
+
+        
+
+      
+    </div>
+    
+
+
+   
+   
+
+   
+
+
+</body>
+</html>
